@@ -427,10 +427,10 @@ body {
     @apply flex flex-1 flex-col gap-4 !important;
   }
   .mobile-nav-item {
-    @apply flex text-light-100 gap-4 w-full justify-start items-center h5 px-6 h-[52px] rounded-full !important;
+    @apply flex text-light-100 gap-4 w-full justify-start items-center h5 px-6 h-[52px] !important;
   }
   .mobile-sign-out-button {
-    @apply h5 flex h-[52px] w-full items-center gap-4 rounded-full bg-primary/10 px-6 text-primary shadow-none transition-all hover:bg-primary/20 !important;
+    @apply h5 flex h-[52px] w-full items-center gap-4 rounded-full bg-red-500/10 px-6 text-red-500 shadow-none transition-all hover:bg-red-500/20 !important;
   }
 
   /* OTP Modal */

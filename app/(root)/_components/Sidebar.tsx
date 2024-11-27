@@ -65,7 +65,7 @@ const Sidebar = ({ fullName, avatar, email }: PROPS) => {
           />
         ) : (
           <Image
-            src={"/avatar-placeholder.webp"}
+            src={"/avatar-placeholder.png"}
             alt="avatar"
             width={44}
             height={44}

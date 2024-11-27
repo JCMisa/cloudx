@@ -49,7 +49,7 @@ export const createAccount = async ({
       {
         fullName,
         email,
-        avatar: "/avatar-placeholder.webp",
+        avatar: "/avatar-placeholder.png",
         accountId,
       }
     );
