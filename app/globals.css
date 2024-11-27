@@ -81,6 +81,50 @@ body {
   body::-webkit-scrollbar-thumb {
     background: #a3e635;
   }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #1e1e1e;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a3e635;
+  }
+
+  /* Remove scrollbar */
+  .remove-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
+    /* background: #1e2238; */
+    background: transparent;
+  }
+
+  .recharts-responsive-container {
+    height: initial !important;
+  }
 }
 
 @layer utilities {
@@ -189,7 +233,7 @@ body {
 
   /* Sidebar & MobileNavigation */
   .nav-icon {
-    @apply w-6 filter invert opacity-25 !important;
+    @apply w-6 filter invert opacity-25 text-white !important;
   }
   .nav-icon-active {
     @apply invert-0 opacity-100 !important;
@@ -199,7 +243,7 @@ body {
 
   /* Root Layout */
   .main-content {
-    @apply remove-scrollbar h-full flex-1 overflow-auto bg-dark px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
+    @apply remove-scrollbar h-full flex-1 overflow-auto bg-dark-100 px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
   }
 
   /* Dashboard */
@@ -259,7 +303,7 @@ body {
     @apply text-center text-light-100 !important;
   }
   .delete-file-name {
-    @apply font-medium text-brand-100 !important;
+    @apply font-medium text-primary-100 !important;
   }
   .modal-cancel-button {
     @apply h-[52px] flex-1 rounded-full bg-white text-light-100 hover:bg-transparent !important;
@@ -357,13 +401,13 @@ body {
 
   /* Header */
   .header {
-    @apply hidden items-center justify-between gap-5 p-5 sm:flex lg:py-7 xl:gap-10 !important;
+    @apply hidden items-center bg-dark justify-between gap-5 p-5 sm:flex lg:py-7 xl:gap-10 !important;
   }
   .header-wrapper {
-    @apply flex-center min-w-fit gap-4 !important;
+    @apply flex-center bg-dark min-w-fit gap-4 !important;
   }
   .sign-out-button {
-    @apply flex-center h-[52px] min-w-[54px] items-center rounded-full bg-primary/10 p-0 text-brand shadow-none transition-all hover:bg-primary/20 !important;
+    @apply flex-center h-[52px] min-w-[54px] items-center rounded-full bg-red-500/10 p-0 text-red-500 shadow-none transition-all hover:bg-red-500/20 !important;
   }
 
   /* Mobile Navigation */
@@ -377,7 +421,7 @@ body {
     @apply aspect-square w-10 rounded-full object-cover !important;
   }
   .mobile-nav {
-    @apply h5 flex-1 gap-1 text-brand !important;
+    @apply h5 flex-1 gap-1 text-primary !important;
   }
   .mobile-nav-list {
     @apply flex flex-1 flex-col gap-4 !important;
@@ -386,7 +430,7 @@ body {
     @apply flex text-light-100 gap-4 w-full justify-start items-center h5 px-6 h-[52px] rounded-full !important;
   }
   .mobile-sign-out-button {
-    @apply h5 flex h-[52px] w-full items-center gap-4 rounded-full bg-primary/10 px-6 text-brand shadow-none transition-all hover:bg-primary/20 !important;
+    @apply h5 flex h-[52px] w-full items-center gap-4 rounded-full bg-primary/10 px-6 text-primary shadow-none transition-all hover:bg-primary/20 !important;
   }
 
   /* OTP Modal */
@@ -416,20 +460,20 @@ body {
     @apply remove-scrollbar hidden h-screen w-[90px] flex-col overflow-auto px-5 py-7 sm:flex lg:w-[280px] xl:w-[325px] !important;
   }
   .sidebar-nav {
-    @apply h5 mt-9 flex-1 gap-1 text-brand !important;
+    @apply h5 mt-9 flex-1 gap-1 text-primary !important;
   }
   .sidebar-nav-item {
-    @apply flex text-light-100 gap-4 rounded-xl lg:w-full justify-center lg:justify-start items-center h5 lg:px-[30px] h-[52px] lg:rounded-full !important;
+    @apply flex text-light-100 gap-4 opacity-70 lg:w-full justify-center lg:justify-start items-center h5 lg:px-[30px] h-[52px] !important;
   }
   .sidebar-user-info {
-    @apply mt-4 flex items-center justify-center gap-2 rounded-full bg-primary/10 p-1 text-light-100 lg:justify-start lg:p-3 !important;
+    @apply mt-4 flex items-center justify-center gap-2 rounded-full bg-dark-100 p-1 text-light-100 lg:justify-start lg:p-3 !important;
   }
   .sidebar-user-avatar {
     @apply aspect-square w-10 rounded-full object-cover !important;
   }
 
   .shad-active {
-    @apply bg-primary text-white shadow-2 !important;
+    @apply border border-b-primary-100 lg:border-l-primary opacity-100 lg:border-b-transparent bg-dark-100 text-white shadow-md !important;
   }
 
   /* Sort */
