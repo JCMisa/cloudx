@@ -25,7 +25,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
             </p>
           </div>
           <Image
-            src={"/auth-icon-2.png"}
+            src={"/auth-icon.png"}
             alt="auth-icon"
             width={1000}
             height={1000}
@@ -35,13 +35,18 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
       </section>
       <section className="flex flex-1 flex-col items-center bg-dark p-4 py-10 lg:justify-center lg:p-10 lg:py-0">
         <div className="mb-16 lg:hidden">
-          <Image
-            src={"/cloudx-logo.svg"}
-            alt="logo"
-            width={50}
-            height={50}
-            className="h-auto w-[200px] lg:w-[250px]"
-          />
+          <div className="flex items-center gap-1">
+            <Image
+              src={"/cloudx-logo.svg"}
+              alt="logo"
+              width={1000}
+              height={1000}
+              className="h-auto w-[50px] lg:w-[100px]"
+            />
+            <h1 className="h1">
+              Cloud<span className="text-primary">X</span>
+            </h1>
+          </div>
         </div>
         {children}
       </section>
