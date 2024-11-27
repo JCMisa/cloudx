@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { LogOut } from "lucide-react";
 import FileUploader from "./FileUploader";
+import { signOutUser } from "@/lib/actions/user.actions";
 
 interface PROPS {
   ownerId: string;
@@ -104,7 +105,7 @@ const MobileNavigation = ({
             <Button
               type="submit"
               className="mobile-sign-out-button"
-              onClick={() => {}}
+              onClick={async () => await signOutUser()}
             >
               <LogOut className="w-8 h-8 cursor-pointer" />
               <p>Logout</p>
