@@ -131,7 +131,7 @@ body {
     @apply mx-auto max-w-7xl px-5;
   }
   .primary-btn {
-    @apply bg-brand hover:bg-brand-100 transition-all rounded-full button !important;
+    @apply bg-primary hover:bg-primary-100 transition-all rounded-full button !important;
   }
   .flex-center {
     @apply flex items-center justify-center;
@@ -158,13 +158,13 @@ body {
     @apply space-y-4 max-w-[95%] sm:w-fit rounded-xl md:rounded-[30px] px-4 md:px-8 py-10 bg-dark outline-none !important;
   }
   .shad-submit-btn {
-    @apply bg-brand button hover:bg-brand-100 transition-all rounded-full !important;
+    @apply bg-primary button hover:bg-primary-100 transition-all rounded-full !important;
   }
   .shad-otp {
     @apply w-full flex gap-1 sm:gap-2 justify-between !important;
   }
   .shad-otp-slot {
-    @apply text-[40px] font-medium rounded-xl ring-brand shadow text-brand-100 justify-center flex border-2 border-dark-100 size-12 md:size-16 gap-5 !important;
+    @apply text-[40px] font-medium rounded-xl ring-primary shadow text-light-100 justify-center flex border-2 border-dark-200 size-12 md:size-16 gap-5 !important;
   }
 
   .shad-sheet {
@@ -316,7 +316,7 @@ body {
 
   /* Chart */
   .chart {
-    @apply flex items-center rounded-[20px] bg-brand p-2 text-white md:flex-col xl:flex-row !important;
+    @apply flex items-center rounded-[20px] bg-primary p-2 text-white md:flex-col xl:flex-row !important;
   }
   .chart-container {
     @apply mx-auto aspect-square w-[180px] text-white xl:w-[200px] !important;
@@ -363,7 +363,7 @@ body {
     @apply flex-center min-w-fit gap-4 !important;
   }
   .sign-out-button {
-    @apply flex-center h-[52px] min-w-[54px] items-center rounded-full bg-brand/10 p-0 text-brand shadow-none transition-all hover:bg-brand/20 !important;
+    @apply flex-center h-[52px] min-w-[54px] items-center rounded-full bg-primary/10 p-0 text-brand shadow-none transition-all hover:bg-primary/20 !important;
   }
 
   /* Mobile Navigation */
@@ -371,7 +371,7 @@ body {
     @apply flex h-[60px] justify-between px-5 sm:hidden !important;
   }
   .header-user {
-    @apply my-3 flex items-center gap-2 rounded-full p-1 text-light-100 sm:justify-center sm:bg-brand/10 lg:justify-start lg:p-3 !important;
+    @apply my-3 flex items-center gap-2 rounded-full p-1 text-light-100 sm:justify-center sm:bg-primary/10 lg:justify-start lg:p-3 !important;
   }
   .header-user-avatar {
     @apply aspect-square w-10 rounded-full object-cover !important;
@@ -386,7 +386,7 @@ body {
     @apply flex text-light-100 gap-4 w-full justify-start items-center h5 px-6 h-[52px] rounded-full !important;
   }
   .mobile-sign-out-button {
-    @apply h5 flex h-[52px] w-full items-center gap-4 rounded-full bg-brand/10 px-6 text-brand shadow-none transition-all hover:bg-brand/20 !important;
+    @apply h5 flex h-[52px] w-full items-center gap-4 rounded-full bg-primary/10 px-6 text-brand shadow-none transition-all hover:bg-primary/20 !important;
   }
 
   /* OTP Modal */
@@ -422,14 +422,14 @@ body {
     @apply flex text-light-100 gap-4 rounded-xl lg:w-full justify-center lg:justify-start items-center h5 lg:px-[30px] h-[52px] lg:rounded-full !important;
   }
   .sidebar-user-info {
-    @apply mt-4 flex items-center justify-center gap-2 rounded-full bg-brand/10 p-1 text-light-100 lg:justify-start lg:p-3 !important;
+    @apply mt-4 flex items-center justify-center gap-2 rounded-full bg-primary/10 p-1 text-light-100 lg:justify-start lg:p-3 !important;
   }
   .sidebar-user-avatar {
     @apply aspect-square w-10 rounded-full object-cover !important;
   }
 
   .shad-active {
-    @apply bg-brand text-white shadow-2 !important;
+    @apply bg-primary text-white shadow-2 !important;
   }
 
   /* Sort */
@@ -442,7 +442,7 @@ body {
 
   /* Thumbnail */
   .thumbnail {
-    @apply flex-center size-[50px] min-w-[50px] overflow-hidden rounded-full bg-brand/10;
+    @apply flex-center size-[50px] min-w-[50px] overflow-hidden rounded-full bg-primary/10;
   }
   .thumbnail-image {
     @apply size-full object-cover object-center !important;

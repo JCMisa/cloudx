@@ -17,6 +17,7 @@ import { useState } from "react";
 import { LoaderCircle } from "lucide-react";
 import Link from "next/link";
 import { createAccount } from "@/lib/actions/user.actions";
+import OTPModal from "./OTPModal";
 
 type FormType = "sign-in" | "sign-up";
 
@@ -33,7 +34,7 @@ const authFormSchema = (formType: FormType) => {
 const AuthForm = ({ type }: { type: FormType }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [accountId, setAccountId] = useState(null);
+  const [accountId, setAccountId] = useState<string | null>(null);
 
   const formSchema = authFormSchema(type);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -52,7 +53,8 @@ const AuthForm = ({ type }: { type: FormType }) => {
         fullName: values.fullName || "",
         email: values.email,
       });
-      setAccountId(user?.accountId);
+      console.log("account id: ", user?.accountId);
+      if (user?.accountId) setAccountId(user?.accountId);
     } catch {
       setErrorMessage("Failed to create an account. Please try again.");
       setTimeout(() => {
@@ -133,7 +135,10 @@ const AuthForm = ({ type }: { type: FormType }) => {
           </div>
         </form>
       </Form>
-      {/* OTP Verification */}
+      {/* show otp modal */}
+      {accountId && (
+        <OTPModal email={form.getValues("email")} accountId={accountId} />
+      )}
     </>
   );
 };
