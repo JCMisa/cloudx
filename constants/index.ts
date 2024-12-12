@@ -83,4 +83,4 @@ export const sortTypes = [
 
 export const avatarPlaceholderUrl = "/avatar-placeholder.png";
 
-export const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
+export const MAX_FILE_SIZE = 30 * 1024 * 1024; // 30MB

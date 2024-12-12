@@ -47,13 +47,13 @@ const Sidebar = ({ fullName, avatar, email }: PROPS) => {
         </ul>
       </nav>
 
-      <Image
+      {/* <Image
         src={"/auth-icon-2.png"}
         alt="logo"
         width={506}
         height={418}
         className="w-full"
-      />
+      /> */}
       <div className="sidebar-user-info">
         {avatar ? (
           <Image
