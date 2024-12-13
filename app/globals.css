@@ -306,7 +306,7 @@ body {
     @apply font-medium text-primary-100 !important;
   }
   .modal-cancel-button {
-    @apply h-[52px] flex-1 rounded-full bg-white text-light-100 hover:bg-transparent !important;
+    @apply h-[52px] flex-1 rounded-full bg-dark-100 text-light-100 hover:bg-transparent !important;
   }
   .modal-submit-button {
     @apply primary-btn !mx-0 h-[52px] w-full flex-1 !important;
